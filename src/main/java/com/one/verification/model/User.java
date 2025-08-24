@@ -33,9 +33,8 @@ public class User implements UserDetails{
 	@Column(name = "verification_expiration")
 	private LocalDateTime  verificationCodeExpiresAt;
 	
-	public User(Long id, String username, String email, String password) {
-		super();
-		this.id = id;
+	public User( String username, String email, String password) {
+		
 		this.username = username;
 		this.email = email;
 		this.password = password;
